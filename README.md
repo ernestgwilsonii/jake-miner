@@ -218,6 +218,9 @@ lsb_release -a
 # List possible kernel choices already downloaded:
 dpkg -l | awk  '{print $2" "$3}' | grep ^linux-image
 
+# Install various generic tools
+sudo apt install -y curl git htop mc net-tools netcat wget xz-utils
+
 
 # Install old kernel 4.10x on Ubuntu 16x
 # Note: You may be able to skip and just edit grub (below) if the older kernel is already installed (but not active)
