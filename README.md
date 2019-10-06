@@ -358,11 +358,13 @@ ethminer -G --list-devices
 
 ### OS Update
 ```
+# Apply all updates
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get autoremove
+sudo reboot
 
-# See current version
+# See current versions
 sudo uname -r
 cat /etc/os-release
 lsb_release -a
