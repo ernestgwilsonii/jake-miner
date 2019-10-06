@@ -231,15 +231,16 @@ sudo mkdir -p /opt/kit/oldkern
 sudo chmod a+rw -R /opt/kit/oldkern
 cd /opt/kit/oldkern
 REF: https://askubuntu.com/questions/798975/no-network-no-usb-after-kernel-update-in-14-04
-#
+
+# 4.10.0-19
 wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-headers-4.10.0-19-generic_4.10.0-19.21_amd64.deb
 wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-headers-4.10.0-19_4.10.0-19.21_all.deb
 wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-image-4.10.0-19-generic_4.10.0-19.21_amd64.deb
 wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-image-extra-4.10.0-19-generic_4.10.0-19.21_amd64.deb
 
-# Or:
+# And/Or:
 
-# 
+# 4.10.0-43
 wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-headers-4.10.0-43-generic-lpae_4.10.0-43.47_armhf.deb
 wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-headers-4.10.0-43_4.10.0-43.47_all.deb
 wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-image-4.10.0-43-generic_4.10.0-43.47_amd64.deb
