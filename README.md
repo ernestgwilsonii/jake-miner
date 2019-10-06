@@ -362,6 +362,7 @@ ethminer -G --list-devices
 ### Manual Build Steps - VARIATION #4 <--Trying to get ~30 mega hashes per card <--WIP
 ```
 # Stuff goes here!
+
 ```
 
 ### OS Update
