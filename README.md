@@ -298,6 +298,10 @@ sudo uname -r
 # Review current AMD GPU drivers installed
 dpkg -l | awk  '{print $2" "$3}' | grep ^amd
 
+# Verify GPU hardware
+lspci | grep VGA
+sudo lshw -C display
+
 
 # Install OpenCL
 sudo apt install -y clinfo
