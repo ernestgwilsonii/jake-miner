@@ -230,11 +230,21 @@ sudo apt install -y curl git htop mc net-tools netcat wget xz-utils
 sudo mkdir -p /opt/kit/oldkern
 sudo chmod a+rw -R /opt/kit/oldkern
 cd /opt/kit/oldkern
-# Headers
+REF: https://askubuntu.com/questions/798975/no-network-no-usb-after-kernel-update-in-14-04
+#
 wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-headers-4.10.0-19-generic_4.10.0-19.21_amd64.deb
 wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-headers-4.10.0-19_4.10.0-19.21_all.deb
-# Kernel
 wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-image-4.10.0-19-generic_4.10.0-19.21_amd64.deb
+wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-image-extra-4.10.0-19-generic_4.10.0-19.21_amd64.deb
+
+# Or:
+
+# 
+wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-headers-4.10.0-43-generic-lpae_4.10.0-43.47_armhf.deb
+wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-headers-4.10.0-43_4.10.0-43.47_all.deb
+wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-image-4.10.0-43-generic_4.10.0-43.47_amd64.deb
+wget http://old-releases.ubuntu.com/ubuntu/pool/main/l/linux/linux-image-extra-4.10.0-43-generic_4.10.0-43.47_amd64.deb
+
 # Install old kernel
 ls -alFh
 sudo dpkg -i *.deb
