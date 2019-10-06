@@ -210,7 +210,7 @@ hostname -I
 ssh jacob@192.168.1.46
 
 # See current kernel version
-uname -r
+sudo uname -r
 cat /etc/os-release
 lsb_release -a
 
