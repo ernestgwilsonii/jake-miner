@@ -284,6 +284,7 @@ cd amdgpu-pro-17.40-492261
 
 # Install the AMD 17.40 drivers on Ubuntu 16.04.03 LTS
 ./amdgpu-pro-install -y --px --compute
+#amdgpu-pro-uninstall -y
 
 # List installed AMD GPU
 dpkg -l | awk  '{print $2" "$3}' | grep ^amd
