@@ -294,6 +294,9 @@ tar xf amdgpu-pro-17.40-492261.tar.xz
 cd amdgpu-pro-17.40-492261
 
 # Install the AMD 17.40 drivers on Ubuntu 16.04.03 LTS
+# Hmm... WTH??
+./amdgpu-pro-install -y --px
+./amdgpu-pro-install -y --compute
 ./amdgpu-pro-install -y --px --compute
 #amdgpu-pro-uninstall -y
 
