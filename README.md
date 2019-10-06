@@ -211,6 +211,7 @@ ssh jacob@192.168.1.46
 
 # See current kernel version
 sudo uname -r
+# 4.10.0-28-generic <--Want 4.10.0-28 kernel!
 cat /etc/os-release
 lsb_release -a
 
@@ -283,6 +284,9 @@ cd amdgpu-pro-17.40-492261
 
 # List installed AMD GPU
 dpkg -l | awk  '{print $2" "$3}' | grep ^amd
+# Example output:
+#amdgpu-pro-core 17.40-492261
+#amdgpu-pro-dkms 17.40-492261
 
 # Reboot
 sudo reboot
