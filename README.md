@@ -361,7 +361,7 @@ ethminer -G --list-devices
 # Apply all updates
 sudo apt-get update
 sudo apt-get -y upgrade
-sudo apt-get autoremove
+sudo apt-get -y autoremove
 sudo reboot
 
 # See current versions
