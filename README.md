@@ -355,3 +355,12 @@ sudo make install
 # List
 ethminer -G --list-devices
 ```
+
+### OS Update
+```
+# OS
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get
+sudo apt-get autoremove
+```
