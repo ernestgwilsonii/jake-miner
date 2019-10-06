@@ -278,15 +278,8 @@ wget --referer support.amd.com https://drivers.amd.com/drivers/linux/ubuntu/amdg
 tar xf amdgpu-pro-17.40-492261.tar.xz
 cd amdgpu-pro-17.40-492261
 
-
-# I was able to get the AMD drivers working on Ubuntu 16.04.03 LTS using 17.40 AMD Drivers
-# Install normally
-./amdgpu-pro-install -y
-# Do NOT reboot and do the "fix" now!
-./amdgpu-pro-install --px
-# Choose Y <--For YES (as needed) to uninstall/re-install
-# Try a -y to avoid being prompted??
-#./amdgpu-pro-install --px -y
+# Install the AMD 17.40 drivers on Ubuntu 16.04.03 LTS
+./amdgpu-pro-install -y --px --compute
 
 # List installed AMD GPU
 dpkg -l | awk  '{print $2" "$3}' | grep ^amd
@@ -301,6 +294,7 @@ ssh jacob@192.168.1.46
 
 # See current kernel version
 sudo uname -r
+
 # Review current AMD GPU drivers installed
 dpkg -l | awk  '{print $2" "$3}' | grep ^amd
 
